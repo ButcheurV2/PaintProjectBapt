@@ -1,0 +1,47 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Paint JS par DUGUE Baptiste</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h2>Paint JS <img src="https://cdn1.iconfinder.com/data/icons/fatcow/32/painbrush.png" alt="" class="paint"></h2>
+
+	<div class="menuDeux">
+		<br><b><h3>Je choisis la couleur de mon pinceau : </h3><b><br><input class="vuecouleur" type="color" id="paletteCouleur" value="#000000">
+			<ul>
+				<li onclick="rouge()" class="rouge"></li>
+				<li onclick="bleu()" class="bleu"></li>
+				<li onclick="jaune()" class="jaune"></li>
+				<li onclick="vert()" class="vert"></li>
+				<p>Taille du pinceau</p><input id="jeSlide" type="range" min="2" max="50" value="15" aria-label="quel taille" name="yolerap"><span class="output">15</span>
+				<button id="clear" onclick='gomme()'>Gomme</button>
+				<button id="clear" onclick='toutEffacer ()'>Tout Effacer</button>
+
+			</ul>
+
+
+		</div>
+		<div>								
+			<p>Taille du canvas</p><input id="tailleCanvasUn" type="range" min="500" max="2000" value="1250" aria-label="quel taille" name="longueur"><span class="outputLongueur">1250</span>
+			<input id="tailleCanvasDeux" type="range" min="250" max="1000" value="500" aria-label="quel taille" name="largeur"><span class="outputLargeur">500</span>
+			<button id="clear" onclick='tailleDeBase ()'>Taille par défault</button></div>
+			<canvas	width="1250" height="500" id="mainCanvas" class="canvas"></canvas>
+
+
+
+
+			<div class="menu">
+				<br><b><h3>Je choisis la couleur du fond : </h3><b><br>
+					<input class="vuecouleur" type="color" id="couleurFond" value="#000000">
+					<button id="clear" onclick="jeChangeLeFond()">Valider le fond</button>	<button id="clear" onclick="clearFond()">Réinitialiser le fond</button>
+
+					<button id="clear" onclick="DownloadCanvasAsImage()">Je télécharge ma création !</button>
+
+				</div>
+
+				<script src="https://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+				<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+			</body>
+			</html>

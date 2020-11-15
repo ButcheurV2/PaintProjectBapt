@@ -1,0 +1,173 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #F5F5F5;
+	font-family: sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-right: 50%;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  margin-right: auto;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.paint {
+  padding-top: 2px;
+}
+
+/* CANVAS
+===================*/
+
+
+.canvas {
+	background: #FFF;
+	display: block;
+	margin: 40px auto 10px;
+	border-radius: 5px;
+	border-left: 1px solid #E0E0E0;
+	border-right: 1px solid #E0E0E0;
+	border-top: 1px solid #E0E0E0;
+	box-shadow: 0 4px 0 0 #E0E0E0;
+}
+
+/* Le Menu 
+=======================*/
+
+.menu {
+	min-height: 60px;
+	margin: 0 auto;
+	width: 600px;
+	border-radius: 50px;
+	overflow: hidden;
+}
+
+.menuDeux {
+
+	margin: 0 auto;
+	width: 600px;
+	border-radius: 5px;
+
+}
+
+
+ul {
+	list-style:none;
+	margin: 0;
+	float: 	left;
+	padding: 10px 0 20px;
+	width: 100%;
+	text-align: center;
+}
+
+ul li, #newColor {
+	display:block;
+	height: 54px;
+	width: 54px;
+	border-radius: 60px;
+	cursor: pointer;
+	border: 0;
+	box-shadow: 0 3px 0 0 #E0E0E0;
+}
+
+ul li {
+	display: inline-block;
+	margin: 0 5px 10px;
+}
+
+.rouge {
+	background: #E74C3C;
+}
+
+.bleu {
+	background: #3498DB;
+}
+
+.jaune {
+	background: #F1C40F;
+}
+
+.vert{
+background: #04A82C;
+}
+
+
+
+/* Bouton 
+==============*/
+
+button {
+	background: #68B25B;
+	box-shadow: 0 3px 0 0 #6A845F;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-shadow: 0 1px #6A845F;
+	font-size: 16px;
+	line-height: 40px;
+	float: right;
+}
+
+#menuCouleur {
+	border: none;
+	border-radius: 5px;
+	margin: 10px auto;
+	padding: 5px 20px;
+	width: 300px;
+}
+#clear {
+	border: none;
+	border-radius: 5px;
+	margin: 10px auto;
+	padding: 0 20px;
+	width: 300px;
+	height: 40px;
+}
+
+#dlCrea{
+
+	border: none;
+	border-radius: 5px;
+	margin: 10px auto;
+	padding: 0 20px;
+	width: 300px;
+	height: 40px;
+
+}
+
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 80px;
+	height: 80px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+#jeSlide{
+    width: 500px;
+    margin:0 auto;
+}
+
+.vuecouleur {
+    margin-left:50%;
+     }
